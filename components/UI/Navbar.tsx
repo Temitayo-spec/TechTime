@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { navData } from '@/utils/NavData';
 import { useRouter } from 'next/router';
+import Button from '../General/Button';
 
 const Navbar = () => {
   const { pathname } = useRouter();
@@ -21,7 +22,7 @@ const Navbar = () => {
             </NavItem>
           ))}
           <NavItem>
-            <Button type="button">Enroll Now</Button>
+            <EnrollButton type="button">Enroll Now</EnrollButton>
           </NavItem>
         </Nav>
       </Inner>
@@ -78,7 +79,7 @@ const NavLink = styled(Link)`
   }
 `;
 
-const Button = styled.button`
+const EnrollButton = styled(Button)`
   padding: 16px 32px;
   width: 145px;
   height: 54px;

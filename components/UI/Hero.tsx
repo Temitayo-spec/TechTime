@@ -44,7 +44,7 @@ export default Hero;
 
 const Wrapper = styled.div`
   width: 100%;
-  background: url(@/public/images/hero_decor.png) no-repeat;
+  background: url('/images/hero_decor.png') no-repeat;
   background-position: center left;
   overflow: hidden;
 `;
@@ -120,15 +120,22 @@ const Stats = styled.div`
 `;
 
 const Users = styled.div`
-  width: 3rem;
-  height: 3rem;
-  position: relative;
+  width: auto;
 `;
 
 const StatsText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  span {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: var(--color-white);
+  }
 `;
 
 const StatsTitle = styled.h3`
@@ -136,7 +143,7 @@ const StatsTitle = styled.h3`
   font-weight: 700;
   font-size: 2rem;
   line-height: 26px;
-  color: var(--color-whitesmoke);
+  color: var(--color-white);
 `;
 
 const Right = styled.div`
