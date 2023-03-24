@@ -16,6 +16,9 @@ export default Home;
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+`;
+
+const SectionOne = styled.div`
+  width: 100%;
   background-color: var(--color-blue);
 `;

@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.cdnfonts.com/css/midnight-signature');
-    @import url('https://fonts.cdnfonts.com/css/satoshi');
-    @import url('https://fonts.cdnfonts.com/css/clash-display');
-                
     :root {
         --primary-font: 'Satoshi', sans-serif;
         --secondary-font: 'Midnight Signature', sans-serif;
@@ -12,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 
         --color-white: #fff;
         --color-blue: #004DB3;
+        --color-light-blue: #aac4e6;
+        --color-whitesmoke: #e7e7e7;
     }
 
     * {
@@ -23,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
         max-width: 100vw;
-        min-height: 100vh;
     }
 
     a {
