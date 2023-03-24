@@ -27,4 +27,24 @@ export const GlobalStyle = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--color-whitesmoke);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-blue);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--color-light-blue);
+    }
+
+    ul {
+        list-style: none;
+    }
 `;
