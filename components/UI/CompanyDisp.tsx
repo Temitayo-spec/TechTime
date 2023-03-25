@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   width: 80%;
-  border-radius: 20%;
+  border-radius: 35%;
   margin: 0 auto;
   overflow: hidden;
 `;

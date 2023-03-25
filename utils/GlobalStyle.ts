@@ -22,7 +22,6 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
         max-width: 100vw;
-        overflow-x: hidden;
     }
 
     .parallax {
