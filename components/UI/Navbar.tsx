@@ -34,6 +34,11 @@ export default Navbar;
 
 const Wrapper = styled.div`
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 `;
 
 const Inner = styled.div`

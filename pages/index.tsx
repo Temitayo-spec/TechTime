@@ -1,4 +1,4 @@
-import { Hero, Navbar } from '@/components';
+import { CompanyDisp, Hero, Navbar } from '@/components';
 import styled from 'styled-components';
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
         <Navbar />
         <Hero />
       </SectionOne>
+      <CompanyDisp />
     </Wrapper>
   );
 };

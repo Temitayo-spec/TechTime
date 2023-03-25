@@ -4,12 +4,22 @@ import Button from '../General/Button';
 import arrow_outward from '@/public/svgs/ic-arrow_outward.svg';
 import users_img from '@/public/images/users_img.png';
 import hero_img from '@/public/images/hero_img.png';
+import decor_one from '@/public/images/green_circle.png';
+import decor_two from '@/public/images/orange_filled.png';
 
 const Hero = () => {
   return (
     <Wrapper>
       <Inner>
         <Left>
+          <DecorContainer>
+            <Decor>
+              <Image src={decor_one} alt="decor" />
+            </Decor>
+            <Decor>
+              <Image src={decor_two} alt="decor" />
+            </Decor>
+          </DecorContainer>
           <Title>Grow your skills to advance your career path </Title>
           <SubTitle>
             build your future with our quality education. the best and largest
@@ -56,6 +66,29 @@ const Inner = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 3em;
+`;
+
+const DecorContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const Decor = styled.div`
+  left: 0;
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: -80px;
+    object-fit: contain;
+  }
+
+  &:nth-child(2) {
+    img {
+      right: 100px;
+    }
+  }
 `;
 
 const Left = styled.div`

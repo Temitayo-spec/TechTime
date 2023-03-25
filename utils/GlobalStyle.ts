@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         --color-blue: #004DB3;
         --color-light-blue: #aac4e6;
         --color-whitesmoke: #e7e7e7;
+        --company-bg: #CCDBF0;
     }
 
     * {
@@ -21,6 +22,23 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
         max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .parallax {
+        display: flex;
+        align-items: center;
+    }
+
+    .parallax .scroller {
+        display: flex;
+        gap: 2em;
+    }
+
+    .parallax span {
+        display: inline-flex;
+        align-items: center;
+        gap: 2em;
     }
 
     a {
