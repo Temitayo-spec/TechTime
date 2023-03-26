@@ -2,8 +2,8 @@ import { courseButtonsData } from '@/utils/CourseButtonsData';
 import { courseData } from '@/utils/CourseData';
 import { useState } from 'react';
 import styled from 'styled-components';
-import CourseCard from '../General/CourseCard';
-import Button from '../General/Button';
+import CourseCard from '../../General/CourseCard';
+import Button from '../../General/Button';
 
 const SectionFour = () => {
   const [tag, setTag] = useState('all');

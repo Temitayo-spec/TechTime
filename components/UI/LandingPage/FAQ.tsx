@@ -1,6 +1,6 @@
 import { FAQData } from '@/utils/FAQData';
 import styled from 'styled-components';
-import Accordion from '../General/Accordion';
+import Accordion from '../../General/Accordion';
 
 const FAQ = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import Button from '../General/Button';
+import Button from '../../General/Button';
 import arrow_outward from '@/public/svgs/ic-arrow_outward.svg';
 import users_img from '@/public/images/users_img.png';
 import hero_img from '@/public/images/hero_img.png';

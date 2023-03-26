@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import connect from '@/public/images/connect.png';
 import Image from 'next/image';
-import Button from '../General/Button';
+import Button from '../../General/Button';
 
 const SectionSix = () => {
   return (

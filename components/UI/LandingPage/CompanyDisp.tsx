@@ -1,7 +1,7 @@
 import { companyData } from '@/utils/CompanyData';
 import Image from 'next/image';
 import styled from 'styled-components';
-import ParallaxComp from '../General/ParallaxComp';
+import ParallaxComp from '../../General/ParallaxComp';
 
 const CompanyDisp = () => {
   return (

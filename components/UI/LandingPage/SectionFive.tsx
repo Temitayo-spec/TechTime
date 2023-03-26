@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import TestimonialCarousel from '../General/TestimonialCarousel';
+import TestimonialCarousel from '../../General/TestimonialCarousel';
 
 const SectionFive = () => {
   return (

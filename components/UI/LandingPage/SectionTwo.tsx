@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Button from '@/components/General/Button';
-import MiniCard from '../General/MiniCard';
+import MiniCard from '../../General/MiniCard';
 import { BottomData, TopData } from '@/utils/Card';
 import Image from 'next/image';
 import banner from '@/public/images/high_quality_hero.png';

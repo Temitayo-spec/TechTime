@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import best_hero from '@/public/images/best_hero.png';
 import { BigCardData } from '@/utils/Card';
-import BigCard from '../General/BigCard';
+import BigCard from '../../General/BigCard';
 
 const SectionThree = () => {
   return (

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { navData } from '@/utils/NavData';
 import { useRouter } from 'next/router';
-import Button from '../General/Button';
+import Button from '../../General/Button';
 
 const Navbar = () => {
   const { pathname } = useRouter();
