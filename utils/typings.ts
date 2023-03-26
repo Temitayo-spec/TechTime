@@ -9,4 +9,5 @@ export interface ButtonProps {
 export interface CardProps {
   text: string;
   image: StaticImageData;
+  bigText?: string;
 }
