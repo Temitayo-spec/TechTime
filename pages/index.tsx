@@ -1,4 +1,15 @@
-import { CompanyDisp, FAQ, Hero, Navbar, SectionFive, SectionFour, SectionSix, SectionThree, SectionTwo } from '@/components';
+import {
+  CompanyDisp,
+  FAQ,
+  Footer,
+  Hero,
+  Navbar,
+  SectionFive,
+  SectionFour,
+  SectionSix,
+  SectionThree,
+  SectionTwo,
+} from '@/components';
 import styled from 'styled-components';
 
 const Home = () => {
@@ -15,6 +26,7 @@ const Home = () => {
       <SectionFive />
       <SectionSix />
       <FAQ />
+      <Footer />
     </Wrapper>
   );
 };
@@ -27,5 +39,6 @@ const Wrapper = styled.div`
 
 const SectionOne = styled.div`
   width: 100%;
-  background-color: var(--color-blue);
+  background: url('/images/minimal_pattern_hero.png') no-repeat
+    var(--color-blue);
 `;

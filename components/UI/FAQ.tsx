@@ -33,7 +33,7 @@ const Wrapper = styled.section`
     url('/images/faq_decor_2.png') no-repeat,
     url('/images/faq_decor_3.png') no-repeat,
     url('/images/faq_decor_4.png') var(--color-white) no-repeat;
-  background-position: 0 30%, 90% 10%, 90% 85%, 100% 40%;
+  background-position: 0 30%, 90% 10%, 90% 85%, 100% 30%;
   padding: 2rem 0;
   width: 100%;
 `;

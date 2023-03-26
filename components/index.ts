@@ -8,3 +8,4 @@ export { default as SectionFour } from './UI/SectionFour';
 export { default as SectionFive } from './UI/SectionFive';
 export { default as SectionSix } from './UI/SectionSix';
 export { default as FAQ } from './UI/FAQ';
+export { default as Footer } from './UI/Footer';
