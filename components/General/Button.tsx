@@ -25,4 +25,5 @@ const GeneralButton = styled.button`
   font-family: var(--primary-font);
   gap: 0.5rem;
   transition: all 0.3s ease-in-out;
+  width: auto;
 `;
