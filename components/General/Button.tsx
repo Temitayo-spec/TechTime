@@ -17,9 +17,10 @@ const GeneralButton = styled.button`
   justify-content: center;
   cursor: pointer;
   border: none;
+  text-transform: capitalize;
   padding: 1rem 2rem;
   font-weight: 700;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   font-size: 1rem;
   font-family: var(--primary-font);
   gap: 0.5rem;

@@ -7,8 +7,12 @@ export const GlobalStyle = createGlobalStyle`
         --tertiary-font: 'Clash Display', sans-serif;
 
         --color-white: #fff;
+        --color-grey: #a2a2a2;
+        --color-gray: #A1A1A1;
+        --color-milk: #F8F9FC;
         --color-blue: #004DB3;
         --color-light-blue: #aac4e6;
+        --color-deep-blue: #000f24;
         --color-whitesmoke: #e7e7e7;
         --company-bg: #CCDBF0;
     }
