@@ -31,3 +31,10 @@ export interface TabButtonProps {
   title: string;
   tag: string;
 }
+
+export interface TestimonialProps {
+  name: string;
+  image: StaticImageData;
+  testimonial: string;
+  role: string;
+}

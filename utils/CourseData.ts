@@ -5,6 +5,12 @@ import intro_html_css from '@/public/images/intro_html_css.png';
 import intro_to_javascript from '@/public/images/intro_to_javascript.png';
 import intro_to_outroom from '@/public/images/intro_to_outroom.png';
 import intro_to_live_marketing from '@/public/images/intro_to_live_marketing.png';
+import leonard from '@/public/images/leonard.png';
+import jeffrey from '@/public/images/jeffrey.png';
+import claretta from '@/public/images/claretta.png';
+import jessica from '@/public/images/jessica.png';
+import samuel from '@/public/images/samuel.png';
+import adam from '@/public/images/adam.png';
 
 export const courseData: CourseCardProps[] = [
   {
@@ -17,7 +23,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 15,
     tutor: {
       name: 'Leonard Victor',
-      image: intro_ux_design,
+      image: leonard,
     },
     price: 15,
   },
@@ -31,7 +37,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 22,
     tutor: {
       name: 'Jeffrey Williams',
-      image: intro_marketing_audience,
+      image: jeffrey,
     },
     price: 32,
   },
@@ -45,7 +51,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 55,
     tutor: {
       name: 'Claretta Mason',
-      image: intro_html_css,
+      image: claretta,
     },
     price: 55,
   },
@@ -59,7 +65,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 22,
     tutor: {
       name: 'Jessica Duke',
-      image: intro_to_javascript,
+      image: jessica,
     },
     price: 45,
   },
@@ -73,7 +79,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 26,
     tutor: {
       name: 'Samuel Jacobs',
-      image: intro_to_outroom,
+      image: samuel,
     },
     price: 25,
   },
@@ -87,7 +93,7 @@ export const courseData: CourseCardProps[] = [
     lessons: 32,
     tutor: {
       name: 'Adam Smith',
-      image: intro_to_live_marketing,
+      image: adam,
     },
     price: 25,
   },

@@ -44,6 +44,16 @@ export const GlobalStyle = createGlobalStyle`
         gap: 2em;
     }
 
+    .swiper-pagination-bullet-active {
+        background: var(--color-blue) !important;
+    }
+
+   .swiper-pagination-bullet {
+        background: #CCDBF0;
+        opacity: 1;
+    };
+    
+    
     a {
         color: inherit;
         text-decoration: none;

@@ -5,3 +5,4 @@ export { default as CompanyDisp } from './UI/CompanyDisp';
 export { default as SectionTwo } from './UI/SectionTwo';
 export { default as SectionThree } from './UI/SectionThree';
 export { default as SectionFour } from './UI/SectionFour';
+export { default as SectionFive } from './UI/SectionFive';
