@@ -29,7 +29,11 @@ const FAQ = () => {
 export default FAQ;
 
 const Wrapper = styled.section`
-  background: var(--color-white);
+  background: url('/images/faq_decor_1.png') no-repeat,
+    url('/images/faq_decor_2.png') no-repeat,
+    url('/images/faq_decor_3.png') no-repeat,
+    url('/images/faq_decor_4.png') var(--color-white) no-repeat;
+  background-position: 0 30%, 90% 10%, 90% 85%, 100% 40%;
   padding: 2rem 0;
   width: 100%;
 `;
