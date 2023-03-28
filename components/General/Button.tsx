@@ -26,4 +26,10 @@ const GeneralButton = styled.button`
   gap: 0.5rem;
   transition: all 0.3s ease-in-out;
   width: auto;
+
+  @media (max-width: 768px) {
+    padding: 0.5em 1rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
+  }
 `;

@@ -25,6 +25,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   background-color: var(--company-bg);
+
+  @media (max-width: 768px) {
+    height: 90px;
+  }
 `;
 
 const Inner = styled.div`
@@ -32,4 +36,9 @@ const Inner = styled.div`
   border-radius: 35%;
   margin: 0 auto;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    border-radius: 0;
+  }
 `;

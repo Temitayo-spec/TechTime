@@ -66,6 +66,12 @@ const Inner = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 3em;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 `;
 
 const DecorContainer = styled.div`
@@ -93,6 +99,12 @@ const Decor = styled.div`
 
 const Left = styled.div`
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -100,7 +112,12 @@ const Title = styled.h1`
   font-weight: 700;
   font-size: 4rem;
   line-height: 82px;
-  color: #ffffff;
+  color: var(--color-white);
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 46px;
+  }
 `;
 
 const SubTitle = styled.p`
@@ -110,6 +127,11 @@ const SubTitle = styled.p`
   line-height: 26px;
   text-transform: capitalize;
   color: var(--color-whitesmoke);
+
+  @media (max-width: 768px) {
+    font-size: 0.625em;
+    line-height: 15px;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -117,6 +139,11 @@ const ButtonContainer = styled.div`
   align-items: center;
   margin-top: 2rem;
   gap: 2em;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 1rem;
+  }
 `;
 
 const GetStarted = styled(Button)`
@@ -150,10 +177,23 @@ const Stats = styled.div`
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
+   
+   @media (max-width: 768px) {
+    justify-content: center;
+   }
 `;
 
 const Users = styled.div`
   width: auto;
+
+  @media (max-width: 768px) {
+    width: 65%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
 
 const StatsText = styled.div`
@@ -168,6 +208,11 @@ const StatsText = styled.div`
     line-height: 22px;
     text-transform: capitalize;
     color: var(--color-white);
+
+    @media (max-width: 768px) {
+      font-size: 0.625em;
+      line-height: 15px;
+    }
   }
 `;
 
@@ -177,6 +222,11 @@ const StatsTitle = styled.h3`
   font-size: 2rem;
   line-height: 26px;
   color: var(--color-white);
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 20px;
+  }
 `;
 
 const Right = styled.div`
@@ -185,6 +235,13 @@ const Right = styled.div`
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: contain;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: -10px;
+    object-fit: cover;
+  } 
 `;
