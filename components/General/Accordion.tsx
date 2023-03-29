@@ -81,6 +81,8 @@ const DropdownBtn = styled.button`
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 19px;
+    padding: 1rem 0;
+    text-align: left;
   }
 `;
 
@@ -109,5 +111,13 @@ const DropdownContent = styled.div`
 
   & > p {
     width: auto;
+  }
+
+  @media (max-width: 768px) {
+    &.expanded {
+      font-size: 14px;
+      line-height: 19px;
+      padding: 1rem 0;
+    }
   }
 `;

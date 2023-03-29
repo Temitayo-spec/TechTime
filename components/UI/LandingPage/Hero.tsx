@@ -43,7 +43,7 @@ const Hero = () => {
           </Stats>
         </Left>
         <Right>
-          <Image src={hero_img} alt="users" height={886} width={705.33} />
+          <Image src={hero_img} alt="users" />
         </Right>
       </Inner>
     </Wrapper>
@@ -57,6 +57,7 @@ const Wrapper = styled.div`
   background: url('/images/hero_decor.png') no-repeat;
   background-position: center left;
   overflow: hidden;
+  height: 100%;
 `;
 
 const Inner = styled.div`
@@ -177,10 +178,10 @@ const Stats = styled.div`
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
-   
-   @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     justify-content: center;
-   }
+  }
 `;
 
 const Users = styled.div`
@@ -236,12 +237,15 @@ const Right = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
   }
 
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: -10px;
-    object-fit: cover;
-  } 
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
 `;

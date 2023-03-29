@@ -58,6 +58,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     background-position: top 100px right, top 50% right, bottom 10% right 40%;
     background-size: 30px, 30px, auto;
+    padding: 50px 0;
   }
 `;
 
@@ -71,6 +72,7 @@ const Inner = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 30px;
   }
 `;
 
@@ -134,7 +136,7 @@ const P = styled.p`
 `;
 
 const ViewCoursesBtn = styled(Button)`
-  background: #004db3;
+  background: var(--color-blue);
   border-radius: 4px;
   text-transform: capitalize;
   color: var(--color-white);
@@ -159,6 +161,7 @@ const CardContainer = styled.div`
 
   @media (max-width: 768px) {
     justify-content: center;
+    gap: 10px;
   }
 `;
 
@@ -200,7 +203,7 @@ const Right = styled.div`
       height: 125px;
       width: 91px;
       position: absolute;
-      left: 80%;
+      left: 74%;
       bottom: 0;
       z-index: 1;
     }

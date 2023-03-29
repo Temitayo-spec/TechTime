@@ -22,14 +22,24 @@ const Wrapper = styled.div`
   border-radius: 8px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   width: auto;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 `;
 
 const Inner = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 
   @media (max-width: 768px) {
+    gap: 0.3rem;
+
     img {
       width: 32px;
       height: 32px;
@@ -53,7 +63,7 @@ const H3 = styled.h3`
 const TextContainer = styled.div`
   font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
   line-height: 28px;
   text-transform: capitalize;
   color: var(--color-grey);

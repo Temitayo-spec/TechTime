@@ -231,9 +231,10 @@ const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    flex: 1.5;
+    font-size: 12px;
     line-height: 19px;
-    padding: 16px 20px;
+    padding: 16px 5px;
     height: 46px;
     border-radius: 0px 2px 2px 0px;
   }

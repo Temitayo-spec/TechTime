@@ -35,7 +35,7 @@ const Wrapper = styled.section`
 `;
 
 const Inner = styled.div`
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,7 @@ const H3 = styled.h3`
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-white);
+  letter-spacing: 0.1em;
 
   @media (max-width: 768px) {
     font-size: 8px;
@@ -72,11 +73,11 @@ const H1 = styled.h1`
   line-height: 69px;
   text-align: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--color-white);
   margin: 10px 0;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
   }
 `;
@@ -97,13 +98,14 @@ const P = styled.p`
 `;
 
 const ImageCtn = styled.div`
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
 
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   @media (max-width: 768px) {
     margin-bottom: 30px;
@@ -111,7 +113,7 @@ const ImageCtn = styled.div`
 `;
 
 const JoinBtn = styled(Button)`
-  width: 220px;
+  width: auto;
   height: 54px;
   background: var(--color-white);
   color: var(--color-blue);
@@ -120,6 +122,5 @@ const JoinBtn = styled(Button)`
     background: transparent;
     border: 1px solid var(--color-white);
     color: var(--color-white);
-    width: auto;
   }
 `;

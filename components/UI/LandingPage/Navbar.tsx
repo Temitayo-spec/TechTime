@@ -45,7 +45,7 @@ export default Navbar;
 
 const Wrapper = styled.div`
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 99999;

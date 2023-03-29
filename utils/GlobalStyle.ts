@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
 
     .swiper-slide {
         @media (max-width: 768px) {
-            width: 100% !important;
+            width: 332px !important;
         }
     }
 

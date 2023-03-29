@@ -23,7 +23,15 @@ const SectionFive = () => {
 
 export default SectionFive;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+`;
 
 const Inner = styled.div``;
 
@@ -63,4 +71,6 @@ const P = styled.p`
   }
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  width: 100%;
+`;
