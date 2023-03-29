@@ -36,4 +36,8 @@ const Wrapper = styled.div`
   z-index: 999999;
 `;
 
-const Inner = styled.div``;
+const Inner = styled.div`
+  img {
+    object-fit: contain;
+  }
+`;

@@ -42,7 +42,7 @@ const TestimonialCarousel = () => {
         modules={[Autoplay, Pagination, Navigation, FreeMode]}
         className="mySwiper"
         style={{
-          padding: '3rem',
+          padding: isMobile ? '3rem 1rem' : '3rem 2rem',
         }}
       >
         {testimonialData.map((testimonial, key) => (
