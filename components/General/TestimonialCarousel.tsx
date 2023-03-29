@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,21 +10,36 @@ import 'swiper/css/pagination';
 import styled from 'styled-components';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper';
+import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper';
 import { testimonialData } from '@/utils/TestimonialData';
 import Image from 'next/image';
 
 const TestimonialCarousel = () => {
+  // check if screen is in mobile view
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <Wrapper>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={isMobile ? 1 : 3}
+        spaceBetween={isMobile ? 30 : 30}
         freeMode={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation, FreeMode]}
         className="mySwiper"
         style={{
           padding: '3rem',

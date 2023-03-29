@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-    @font-face {
-    font-family: 'Amazing Kids';
-    src: url('../fonts/AmazingKids.ttf');
-    }
     :root {
         --primary-font: 'Satoshi', sans-serif;
         --secondary-font: 'Midnight Signature', sans-serif;
@@ -47,12 +43,6 @@ export const GlobalStyle = createGlobalStyle`
         display: inline-flex;
         align-items: center;
         gap: 2em;
-    }
-
-    .swiper-slide {
-        @media (max-width: 768px) {
-            width: 332px !important;
-        }
     }
 
     .swiper-pagination-bullet-active {
