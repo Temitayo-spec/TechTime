@@ -64,7 +64,7 @@ const CourseCard = ({
 export default CourseCard;
 
 const Wrapper = styled.div`
-  width: 100%;
+  max-width: 450px;
   height: 100%;
   background-color: var(--color-milk);
   border-radius: 1rem;
