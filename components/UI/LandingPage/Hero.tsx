@@ -63,15 +63,19 @@ const Wrapper = styled.div`
 const Inner = styled.div`
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 3em;
+  padding: 1.5rem 0;
 
   @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
+    width: 90%;
     gap: 1rem;
     text-align: center;
+    margin-bottom: -20px;
   }
 `;
 
@@ -87,7 +91,7 @@ const Decor = styled.div`
 
   img {
     position: absolute;
-    top: -80px;
+    top: -20px;
     object-fit: contain;
   }
 
@@ -96,11 +100,23 @@ const Decor = styled.div`
       right: 100px;
     }
   }
+
+  @media (max-width: 768px) {
+    img {
+      top: -10px;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      img {
+        right: 0;
+        left: 90%
+      }
+    }
+  }
 `;
 
 const Left = styled.div`
-  width: 50%;
-
   @media (max-width: 768px) {
     width: 100%;
     padding: 0.5rem;
@@ -231,7 +247,6 @@ const StatsTitle = styled.h3`
 `;
 
 const Right = styled.div`
-  width: 50%;
   margin-bottom: -120px;
 
   img {
