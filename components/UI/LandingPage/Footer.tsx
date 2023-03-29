@@ -68,8 +68,8 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
   padding: 2rem 0;
   width: 90%;
   margin: 0 auto;
@@ -155,6 +155,7 @@ const FooterMidLink = styled(Link)`
 const FooterRight = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const FooterRightTitle = styled.h1`
@@ -173,12 +174,11 @@ const FooterRightTitle = styled.h1`
 `;
 
 const Form = styled.form`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 `;
 
 const Input = styled.input`
-  flex: 2;
   width: 100%;
   padding: 1rem;
   height: 46px;
@@ -198,9 +198,8 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  flex: 1;
   padding: 16px 0.2rem;
-  width: auto;
+  width: 100%;
   height: 46px;
   background: #054fb3;
   border-radius: 0px 2px 2px 0px;
@@ -218,7 +217,6 @@ const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    flex: 1.5;
     font-size: 12px;
     line-height: 19px;
     padding: 16px 5px;
