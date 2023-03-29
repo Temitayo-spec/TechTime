@@ -36,6 +36,12 @@ const Wrapper = styled.section`
   background-position: 0 30%, 90% 10%, 90% 85%, 100% 30%;
   padding: 2rem 0;
   width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+    background-position: 0 25%, 90% 5%, 90% 85%, 100% 30%;
+    background-size: 30px, 20px, 5px;
+  }
 `;
 
 const Inner = styled.div`
@@ -54,6 +60,11 @@ const H1 = styled.h1`
   font-size: 3.5rem;
   line-height: 69px;
   text-transform: capitalize;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
 
 const P = styled.p`
@@ -66,4 +77,10 @@ const P = styled.p`
   text-transform: capitalize;
   width: 60%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+    line-height: 16px;
+    width: 90%;
+  }
 `;

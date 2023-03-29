@@ -37,6 +37,10 @@ const AccordionCtn = styled.div`
   width: 60%;
   margin: 0 auto;
   border-bottom: 1px solid #eaeaea;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const AccordionItem = styled.div`
@@ -72,6 +76,11 @@ const DropdownBtn = styled.button`
   span {
     font-size: 1.5rem;
     font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 19px;
   }
 `;
 
