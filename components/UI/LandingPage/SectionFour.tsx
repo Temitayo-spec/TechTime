@@ -57,6 +57,10 @@ const Inner = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 const Header = styled.div`
@@ -72,6 +76,11 @@ const Title = styled.div`
   line-height: 69px;
   text-transform: capitalize;
   color: var(--color-deep-blue);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -84,12 +93,21 @@ const SubTitle = styled.div`
   color: var(--color-grey);
   width: 60%;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    font-size: 8px;
+    line-height: 16px;
+    width: 100%;
+  }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 5em;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
 `;
 
 const TabButton = styled.div`
@@ -110,6 +128,18 @@ const TabButton = styled.div`
   &:hover {
     color: var(--color-blue);
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.625rem;
+    line-height: 11px;
+
+    &.active {
+      padding: 4px 8px;
+      height: 19px;
+      background: var(--color-white);
+      border-radius: 2px;
+    }
+  }
 `;
 
 const CourseContainer = styled.div`
@@ -118,6 +148,11 @@ const CourseContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
 `;
 
 const ExploreButton = styled(Button)`

@@ -76,16 +76,26 @@ const Wrapper = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    border-radius: 7px;
+  }
 `;
 
 const Inner = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    gap: 0.5rem;
   }
 `;
 
@@ -93,7 +103,6 @@ const FlexOne = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
 `;
 
 const CategContainer = styled.div`
@@ -110,7 +119,11 @@ const CategContainer = styled.div`
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: capitalize;
-  color: #1e5dce;
+  color: var(--color-blue);
+
+  @media (max-width: 768px) {
+    font-size: 4px;
+  }
 `;
 
 const RatingContainer = styled.div`
@@ -122,6 +135,10 @@ const RatingContainer = styled.div`
   font-size: 0.75rem;
   text-transform: capitalize;
   color: var(--color-grey);
+
+  @media (max-width: 768px) {
+    font-size: 4px;
+  }
 `;
 
 const Rating = styled.div`
@@ -140,13 +157,17 @@ const CourseTitle = styled.div`
   line-height: 30px;
   text-transform: capitalize;
   color: var(--color-deep-blue);
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+    line-height: 10px;
+  }
 `;
 
 const FlexTwo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
 `;
 
 const Duration = styled.div`
@@ -158,6 +179,15 @@ const Duration = styled.div`
   font-size: 1rem;
   text-transform: capitalize;
   color: var(--color-grey);
+
+  @media (max-width: 768px) {
+    font-size: 4px;
+
+    img {
+      height: 6.67px;
+      width: 6.7px;
+    }
+  }
 `;
 
 const Lessons = styled.div`
@@ -169,13 +199,21 @@ const Lessons = styled.div`
   font-size: 1rem;
   text-transform: capitalize;
   color: var(--color-grey);
+
+  @media (max-width: 768px) {
+    font-size: 4px;
+
+    img {
+      height: 6.67px;
+      width: 6.7px;
+    }
+  }
 `;
 
 const FlexThree = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
 `;
 
 const Tutor = styled.div`
@@ -196,6 +234,17 @@ const Tutor = styled.div`
       object-fit: cover;
     }
   }
+
+  @media (max-width: 768px) {
+    font-size: 6px;
+
+    span {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
 `;
 
 const Price = styled.div`
@@ -205,4 +254,8 @@ const Price = styled.div`
   line-height: 25px;
   text-transform: capitalize;
   color: var(--color-blue);
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
 `;
