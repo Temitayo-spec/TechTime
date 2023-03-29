@@ -4,6 +4,7 @@ import { navData } from '@/utils/NavData';
 import { useRouter } from 'next/router';
 import Button from '../../General/Button';
 import ic_hamburger from '@/public/svgs/ic-hamburger.svg';
+import techtime from '@/public/images/techtime.png';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     <Wrapper>
       <Inner>
         <Logo>
-          <h1>TechTime</h1>
+          <Image src={techtime} alt="techtime" />
           <Image
             onClick={() => setToggle(!toggle)}
             src={ic_hamburger}
@@ -89,7 +90,16 @@ const Logo = styled.div`
     display: none;
   }
 
+  img:nth-child(1) {
+    display: flex;
+  }
+
   @media (max-width: 768px) {
+    img:nth-child(1) {
+      display: flex;
+      width: auto;
+      height: 100%;
+    }
     img {
       display: block;
       width: 30px;

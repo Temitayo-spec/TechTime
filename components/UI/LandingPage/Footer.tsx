@@ -5,6 +5,7 @@ import ic_instagram from '@/public/svgs/ic-instagram.svg';
 import ic_twitter from '@/public/svgs/ic-twitter.svg';
 import ic_youtube from '@/public/svgs/ic-youtube.svg';
 import ic_discord from '@/public/svgs/ic-discord.svg';
+import techtime from '@/public/images/techtime.png';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLeft>
-          <FooterLogo>TechTime</FooterLogo>
+          <Image src={techtime} alt="techtime" />
           <FooterText>
             Reach out to us on any of our social media networks
           </FooterText>
