@@ -57,8 +57,12 @@ export default Footer;
 const Wrapper = styled.div`
   width: 100%;
   height: 80vh;
-  background: #000f24;
+  background: var(--color-deep-blue);
   padding: 3rem 0;
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 const Inner = styled.div`
@@ -68,6 +72,10 @@ const Inner = styled.div`
   padding: 2rem 0;
   width: 90%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const FooterLeft = styled.div`
@@ -81,7 +89,12 @@ const FooterLogo = styled.h1`
   line-height: 47px;
   color: var(--color-white);
   margin-bottom: 1rem;
-  font-family: var(--secondary-font);
+  font-family: 'Amazing Kids';
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 `;
 
 const FooterText = styled.p`
@@ -91,6 +104,12 @@ const FooterText = styled.p`
   color: var(--color-white);
   margin-bottom: 1rem;
   font-family: var(--primary-font);
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 22px;
+    width: 75%;
+  }
 `;
 
 const FooterSocial = styled.div`
@@ -100,6 +119,10 @@ const FooterSocial = styled.div`
   img {
     width: 30px;
     height: 30px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 2rem;
   }
 `;
 
@@ -115,6 +138,12 @@ const FooterMidTitle = styled.h1`
   color: var(--color-white);
   margin-bottom: 1rem;
   font-family: var(--tertiary-font);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 1rem;
+  }
 `;
 
 const FooterMidLink = styled(Link)`
@@ -128,6 +157,11 @@ const FooterMidLink = styled(Link)`
   transition: all 0.3s ease-in-out;
   &:hover {
     color: var(--color-blue);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 22px;
   }
 `;
 
@@ -143,6 +177,12 @@ const FooterRightTitle = styled.h1`
   color: var(--color-white);
   margin-bottom: 1rem;
   font-family: var(--tertiary-font);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 1rem;
+  }
 `;
 
 const Form = styled.form`
@@ -162,6 +202,12 @@ const Input = styled.input`
   font-weight: 500;
   font-size: 0.875rem;
   outline: none;
+
+  @media (max-width: 768px) {
+    &::placeholder {
+      text-transform: capitalize;
+    }
+  }
 `;
 
 const Button = styled.button`
@@ -176,11 +222,19 @@ const Button = styled.button`
   font-weight: 500;
   font-size: 0.875rem;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--color-white);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     background: var(--color-blue);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 16px 20px;
+    height: 46px;
+    border-radius: 0px 2px 2px 0px;
   }
 `;

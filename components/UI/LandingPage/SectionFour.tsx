@@ -46,8 +46,14 @@ export default SectionFour;
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: var(--color-milk);
+  background: url('/images/star.png') var(--color-milk) no-repeat;
   padding: 2rem 0;
+  background-position: 10% 10%;
+
+  @media (max-width: 768px) {
+    background-position: 0% 3%;
+    background-size: 20px;
+  }
 `;
 
 const Inner = styled.div`
@@ -123,6 +129,10 @@ const TabButton = styled.div`
 
   &.active {
     color: var(--color-blue);
+    padding: 8px 16px;
+    background: var(--color-white);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
   &:hover {
