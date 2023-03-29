@@ -1,3 +1,37 @@
+## Tech Time - TalentPlus frontend developer evaluation
+The goal of this project is to evaluate a frontend developer's abilities. There are three sections to this assessment.
+
+• Develop the design that was sent in the initial assessment invite mail.
+• Dockerize the app by creating a docker file and explain in a README file how to build and run the app in docker.
+• Record a video not more than 8 mins long showcasing the landing page and the docker setup.
+
+## Design
+https://www.figma.com/file/efaADvQRuRa9E7GOp8MvP3/Techtime?node-id=1476-4&t=73OxeijDnXZIVDTu-0
+
+## Tech Stack
+• NextJS
+• Styled-Components
+• Typescript
+
+## Run Locally
+Firstly, clone the repo on your local machine by running
+```bash
+  git clone https://github.com/Temitayo-spec/TechTime.git
+```
+Go to the project directory
+```bash
+  cd name-of-project
+```
+Then install the dependencies by running
+```bash
+    npm install or yarn install
+```
+To spin up the development server, you need to run
+```bash
+    npm run dev or yarn dev
+```
+Congratulations! If you followed these steps, then you can go to your browser and load the app on localhost:3000 in your browser.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
