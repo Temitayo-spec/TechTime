@@ -247,7 +247,7 @@ const StatsTitle = styled.h3`
 `;
 
 const Right = styled.div`
-  margin-bottom: -120px;
+  margin-bottom: -40px;
 
   img {
     width: 100%;
