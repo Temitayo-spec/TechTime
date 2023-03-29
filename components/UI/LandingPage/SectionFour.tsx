@@ -155,7 +155,7 @@ const TabButton = styled.div`
 const CourseContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 
@@ -166,7 +166,6 @@ const CourseContainer = styled.div`
 `;
 
 const ExploreButton = styled(Button)`
-  width: 209px;
   height: 54px;
   background: var(--color-blue);
   color: #ffffff;

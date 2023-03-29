@@ -167,7 +167,6 @@ const NavLink = styled(Link)`
 
 const EnrollButton = styled(Button)`
   padding: 16px 32px;
-  width: 145px;
   height: 54px;
   background: var(--color-white);
   border-radius: 4px;

@@ -9,3 +9,4 @@ export { default as SectionFive } from './UI/LandingPage/SectionFive';
 export { default as SectionSix } from './UI/LandingPage/SectionSix';
 export { default as FAQ } from './UI/LandingPage/FAQ';
 export { default as Footer } from './UI/LandingPage/Footer';
+export { default as Preloader } from './General/Preloader';

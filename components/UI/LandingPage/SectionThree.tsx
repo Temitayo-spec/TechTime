@@ -113,8 +113,9 @@ const Right = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: 50%;
-  
+
   @media (max-width: 768px) {
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 `;

@@ -1,12 +1,20 @@
+import { Preloader } from '@/components';
 import '@/styles/globals.css';
 import { GlobalStyle } from '@/utils/GlobalStyle';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [preloader, setPreloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setPreloader(false);
+    }, 2000);
+  }, []);
   return (
     <>
       <Head>
@@ -15,8 +23,15 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <Preloader preloader={preloader} />
+      <div style={{
+        opacity: preloader ? 0 : 1,
+        transition: 'all 1s ease-in-out',
+        overflow: 'hidden',
+      }}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
