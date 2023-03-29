@@ -28,6 +28,13 @@ const Inner = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (max-width: 768px) {
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 `;
 
 const H3 = styled.h3`
@@ -37,6 +44,10 @@ const H3 = styled.h3`
   line-height: 22px;
   text-transform: capitalize;
   color: #000000;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -45,5 +56,10 @@ const TextContainer = styled.div`
   font-size: 0.75rem; 
   line-height: 28px;
   text-transform: capitalize;
-  color: #a2a2a2;
+  color: var(--color-grey);
+
+  @media (max-width: 768px) {
+    font-size: 0.635rem;
+    line-height: 16px;
+  }
 `;

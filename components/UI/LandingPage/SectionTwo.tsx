@@ -6,6 +6,7 @@ import Image from 'next/image';
 import banner from '@/public/images/high_quality_hero.png';
 import spot from '@/public/images/spot.png';
 import crown from '@/public/images/crown.png';
+import stats from '@/public/images/stats.png';
 
 const SectionTwo = () => {
   return (
@@ -36,6 +37,7 @@ const SectionTwo = () => {
         <Right>
           <Image src={banner} alt="banner" />
           <Image src={spot} alt="spot" />
+          <Image src={stats} alt="stats" />
         </Right>
       </Inner>
     </Wrapper>
@@ -169,6 +171,7 @@ const Right = styled.div`
     height: 100%;
     position: relative;
     z-index: 2;
+    object-fit: cover;
   }
 
   img:nth-child(2) {
@@ -177,6 +180,16 @@ const Right = styled.div`
     left: 74%;
     bottom: 0;
     z-index: 1;
+    object-fit: cover;
+  }
+
+  img:nth-child(3) {
+    width: auto;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 3;
+    object-fit: cover;
   }
 
   @media (max-width: 768px) {
@@ -190,6 +203,12 @@ const Right = styled.div`
       left: 80%;
       bottom: 0;
       z-index: 1;
+    }
+
+    img:nth-child(3) {
+      width: 90px;
+      height: 36px;
+      left: 10%;
     }
   }
 `;

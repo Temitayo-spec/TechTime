@@ -67,6 +67,11 @@ const Left = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const LeftTextContainer = styled.div`
@@ -81,7 +86,12 @@ const H2 = styled.h2`
   font-size: 3.5rem;
   line-height: 70px;
   text-transform: capitalize;
-  color: #000f24;
+  color: var(--color-deep-blue);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 `;
 
 const P = styled.p`
@@ -90,7 +100,12 @@ const P = styled.p`
   font-size: 1rem;
   line-height: 28px;
   text-transform: capitalize;
-  color: #a2a2a2;
+  color: var(--color-grey);
+
+  @media (max-width: 768px) {
+    font-size: 0.625em;
+    line-height: 16px;
+  }
 `;
 
 const Right = styled.div`

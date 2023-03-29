@@ -43,10 +43,6 @@ export const GlobalStyle = createGlobalStyle`
         display: inline-flex;
         align-items: center;
         gap: 2em;
-
-        @media (max-width: 768px) {
-
-        }
     }
 
     .swiper-pagination-bullet-active {
