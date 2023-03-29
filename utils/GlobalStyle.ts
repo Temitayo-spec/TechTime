@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+    font-family: 'Amazing Kids';
+    src: url('../fonts/AmazingKids.ttf');
+    }
     :root {
         --primary-font: 'Satoshi', sans-serif;
         --secondary-font: 'Midnight Signature', sans-serif;
