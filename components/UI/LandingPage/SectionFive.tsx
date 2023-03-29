@@ -38,6 +38,11 @@ const H1 = styled.h1`
   line-height: 69px;
   text-transform: capitalize;
   color: var(--color-deep-blue);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
 
 const P = styled.p`
@@ -50,6 +55,12 @@ const P = styled.p`
   color: var(--color-gray);
   width: 55%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+    line-height: 16px;
+    width: 70%;
+  }
 `;
 
 const Content = styled.div``;

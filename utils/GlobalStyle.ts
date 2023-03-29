@@ -45,6 +45,12 @@ export const GlobalStyle = createGlobalStyle`
         gap: 2em;
     }
 
+    .swiper-slide {
+        @media (max-width: 768px) {
+            width: 100% !important;
+        }
+    }
+
     .swiper-pagination-bullet-active {
         background: var(--color-blue) !important;
     }

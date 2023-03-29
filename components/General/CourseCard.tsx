@@ -110,7 +110,6 @@ const CategContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 4px 20px;
-  height: 24px;
   background: rgba(30, 93, 206, 0.2);
   border-radius: 1rem;
 
@@ -123,6 +122,7 @@ const CategContainer = styled.div`
 
   @media (max-width: 768px) {
     font-size: 4px;
+    padding: 2px, 8px, 2px, 8px;
   }
 `;
 
