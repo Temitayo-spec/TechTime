@@ -122,7 +122,7 @@ const CategContainer = styled.div`
 
   @media (max-width: 768px) {
     font-size: 4px;
-    padding: 2px, 8px, 2px, 8px;
+    padding: 2px 8px 2px 8px;
   }
 `;
 
