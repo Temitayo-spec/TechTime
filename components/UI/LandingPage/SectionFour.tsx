@@ -97,7 +97,7 @@ const SubTitle = styled.div`
   text-align: center;
   text-transform: capitalize;
   color: var(--color-grey);
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   @media (max-width: 768px) {
     font-size: 8px;

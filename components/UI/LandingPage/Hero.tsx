@@ -67,7 +67,7 @@ const Inner = styled.div`
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 3em;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 
   @media (max-width: 768px) {
     display: flex;
@@ -75,7 +75,7 @@ const Inner = styled.div`
     width: 90%;
     gap: 1rem;
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
   }
 `;
 

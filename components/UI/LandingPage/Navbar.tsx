@@ -114,6 +114,7 @@ const Nav = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
 
   @media (max-width: 768px) {
     position: absolute;
