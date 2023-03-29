@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html,
     body {
-        max-width: 100vw;
+        max-width: 100%;
         scroll-behavior: smooth;
     }
 
