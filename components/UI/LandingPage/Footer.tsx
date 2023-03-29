@@ -84,20 +84,6 @@ const FooterLeft = styled.div`
   flex-direction: column;
 `;
 
-const FooterLogo = styled.h1`
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 47px;
-  color: var(--color-white);
-  margin-bottom: 1rem;
-  font-family: 'Amazing Kids';
-
-  @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-`;
-
 const FooterText = styled.p`
   font-weight: 400;
   font-size: 1rem;
@@ -149,7 +135,7 @@ const FooterMidTitle = styled.h1`
 
 const FooterMidLink = styled(Link)`
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 30px;
   color: var(--color-white);
   margin-bottom: 1rem;
@@ -213,8 +199,8 @@ const Input = styled.input`
 
 const Button = styled.button`
   flex: 1;
-  padding: 16px 40px;
-  width: 100%;
+  padding: 16px 0.2rem;
+  width: auto;
   height: 46px;
   background: #054fb3;
   border-radius: 0px 2px 2px 0px;
