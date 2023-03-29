@@ -57,11 +57,11 @@ const H3 = styled.h3`
   line-height: 22px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-white);
 
   @media (max-width: 768px) {
-    font-size: 0.8rem;
-    line-height: 18px;
+    font-size: 8px;
+    line-height: 11px;
   }
 `;
 
@@ -76,8 +76,8 @@ const H1 = styled.h1`
   margin: 10px 0;
 
   @media (max-width: 768px) {
-    font-size: 2.5rem;
-    line-height: 49px;
+    font-size: 24px;
+    line-height: 30px;
   }
 `;
 
@@ -88,7 +88,12 @@ const P = styled.p`
   line-height: 22px;
   text-align: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--color-white);
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+    line-height: 11px;
+  }
 `;
 
 const ImageCtn = styled.div`
