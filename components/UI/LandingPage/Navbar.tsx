@@ -74,17 +74,6 @@ const Logo = styled.div`
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  h1 {
-    font-weight: 400;
-    font-size: 3rem;
-    text-transform: capitalize;
-    color: var(--color-white);
-    font-family: 'Amazing Kids';
-
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-  }
 
   img {
     display: none;
@@ -92,6 +81,8 @@ const Logo = styled.div`
 
   img:nth-child(1) {
     display: flex;
+    margin-right: 0.4em;
+    object-fit: contain;
   }
 
   @media (max-width: 768px) {

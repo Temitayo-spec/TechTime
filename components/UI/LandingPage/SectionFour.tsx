@@ -109,11 +109,8 @@ const SubTitle = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 5em;
-
-  @media (max-width: 768px) {
-    gap: 1rem;
-  }
+  justify-content: space-evenly;
+  width: 100%;
 `;
 
 const TabButton = styled.div`
