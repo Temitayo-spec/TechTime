@@ -153,7 +153,7 @@ const TabButton = styled.div`
 `;
 
 const CourseContainer = styled.div`
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
