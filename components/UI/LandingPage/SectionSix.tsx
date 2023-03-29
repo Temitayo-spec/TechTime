@@ -98,7 +98,7 @@ const P = styled.p`
 `;
 
 const ImageCtn = styled.div`
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
 
@@ -108,6 +108,7 @@ const ImageCtn = styled.div`
     object-fit: cover;
   }
   @media (max-width: 768px) {
+    width: 100%;
     margin-bottom: 30px;
   }
 `;
