@@ -58,10 +58,10 @@ const Wrapper = styled.div`
   background-position: center left;
   overflow: hidden;
   height: 100%;
-  margin-top: 80px;
+  margin-top: 70px;
 
   @media (max-width: 768px) {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 `;
 
