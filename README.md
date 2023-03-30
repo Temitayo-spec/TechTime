@@ -32,6 +32,25 @@ To spin up the development server, you need to run
 ```
 Congratulations! If you followed these steps, then you can go to your browser and load the app on localhost:3000 in your browser.
 
+## Inability to Support Docker and Dockerizing the App
+
+This section of the README explains that the current PC configuration does not support Docker and therefore, it is not possible to Dockerize the application.
+
+## System Requirements:
+
+Docker requires a minimum of 4GB RAM and 64-bit Windows 10 Pro, Enterprise or Education editions (excluding Windows 10 Home). It also requires a compatible CPU architecture, virtualization support, and a minimum of 20GB of free disk space.
+
+Unfortunately, the current PC does not meet the above requirements and therefore, cannot support Docker. As a result, Dockerizing the application is not possible.
+
+## Alternative Solutions:
+
+However, there are alternative solutions to run the application on this PC. You can run the application locally by installing the required software components on the PC. Alternatively, you can deploy the application to a virtual machine or cloud-based service that supports Docker.
+
+## Conclusion:
+
+I understand that Docker is a popular tool for developers, but unfortunately, this PC configuration does not meet the minimum requirements to support Docker. I recommend exploring alternative solutions to run the application locally or in a virtual environment. Please feel free to reach out to me if you have any questions or concerns.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
