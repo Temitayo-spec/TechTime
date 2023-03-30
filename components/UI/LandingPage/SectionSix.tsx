@@ -114,7 +114,6 @@ const ImageCtn = styled.div`
 `;
 
 const JoinBtn = styled(Button)`
-  width: auto;
   height: 54px;
   background: var(--color-white);
   color: var(--color-blue);

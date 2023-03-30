@@ -69,7 +69,7 @@ const Wrapper = styled.div`
 const Inner = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 2rem 0;
   width: 90%;
   margin: 0 auto;
@@ -82,6 +82,10 @@ const Inner = styled.div`
 const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;
+
+  img {
+    object-fit: contain;
+  }
 `;
 
 const FooterText = styled.p`
@@ -91,6 +95,7 @@ const FooterText = styled.p`
   color: var(--color-white);
   margin-bottom: 1rem;
   font-family: var(--primary-font);
+  margin-top: 1rem;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -175,7 +180,7 @@ const FooterRightTitle = styled.h1`
 
 const Form = styled.form`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.2fr;
 `;
 
 const Input = styled.input`
