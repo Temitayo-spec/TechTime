@@ -166,7 +166,6 @@ const ButtonContainer = styled.div`
 const GetStarted = styled(Button)`
   background-color: var(--color-blue);
   color: var(--color-whitesmoke);
-  width: 216px;
   height: 54px;
   border: 1px solid var(--color-white);
 
@@ -179,7 +178,6 @@ const GetStarted = styled(Button)`
 const EnrollButton = styled(Button)`
   background-color: var(--color-white);
   color: var(--color-blue);
-  width: 149px;
   height: 54px;
 
   &:hover {
